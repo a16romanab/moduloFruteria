@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_fruteria_fruta,fruteria.fruta,model_fruteria_fruta,,1,1,1,1
+access_fruteria_socio,fruteria.socio,model_fruteria_socio,,1,1,1,1
+access_fruteria_peticion,fruteria.peticion,model_fruteria_peticion,,1,1,1,1

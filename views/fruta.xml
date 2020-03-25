@@ -1,0 +1,14 @@
+<odoo>
+
+    <record id="action_fruta" model="ir.actions.act_window">
+        <field name="name">Frutas</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">fruteria.fruta</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="fruteria_root" name="Fruteria" sequence="0"/>
+    <menuitem id="fruteria_fruta" name="Frutas" parent="fruteria_root" action="action_fruta"/>
+
+</odoo>
