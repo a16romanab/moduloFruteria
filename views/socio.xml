@@ -8,6 +8,36 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+    <menuitem id="fruteria_root" name="Fruteria" sequence="0"/>
     <menuitem id="fruteria_socio" name="Socios" parent="fruteria_root" action="action_socio"/>
 
+    <record id="view_socio_tree" model="ir.ui.view">
+        <field name="name">Socios</field>
+        <field name="model">fruteria.socio</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="id_socio"/>
+                <field name="partner_id"/>            
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_socio_form" model="ir.ui.view">
+        <field name="name">Socios</field>
+        <field name="model">fruteria.socio</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="id_socio" />
+                        <field name="partner_id"/>
+                    </group>
+                    <group>
+                        <field name="imagen_socio" widget="image" class="oe_avatar" />
+                    </group>
+                </group>
+                <field name="ids_peticion"/>  
+            </form>
+        </field>
+    </record>
 </odoo>

@@ -11,4 +11,27 @@
     <menuitem id="fruteria_root" name="Fruteria" sequence="0"/>
     <menuitem id="fruteria_fruta" name="Frutas" parent="fruteria_root" action="action_fruta"/>
 
+    <record id="view_fruta_tree" model="ir.ui.view">
+        <field name="name">Frutas</field>
+        <field name="model">fruteria.fruta</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="nombre" />
+                <field name="preciokg"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_fruta_form" model="ir.ui.view">
+        <field name="name">Frutas</field>
+        <field name="model">fruteria.fruta</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="nombre"/>
+                    <field name="preciokg"/>
+                </group>
+            </form>
+        </field>
+    </record>
 </odoo>

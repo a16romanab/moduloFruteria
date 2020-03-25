@@ -28,7 +28,8 @@
         'views/templates.xml',
         'views/socio.xml',
         'views/peticion.xml',
-        'views/fruta.xml'
+        'views/fruta.xml',
+        'views/lineapeticion.xml'
     ],
     'installable': True,
     'application': True,
